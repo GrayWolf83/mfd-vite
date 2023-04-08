@@ -1,3 +1,1 @@
-import reactLogo from './react.svg'
-
-export { reactLogo }
+export { ReactIcon } from './ReactIcon'
