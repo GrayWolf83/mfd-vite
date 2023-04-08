@@ -14,21 +14,32 @@
   -webkit-text-size-adjust: 100%;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+html, body {
+  min-width: 100%;
+  min-height: 100vh;
+  background-color: rgba(236, 236, 242, 0.932);
 }
-a:hover {
+
+.mantine-NavLink-body {
+  padding: 10px;
+  margin: -10px;
+}
+
+a,a * {
+  font-weight: 500;
+  color: #dee2e6;
+  text-decoration: none;
+}
+.mantine-NavLink-body:hover {
   color: #535bf2;
 }
 
-body {
+a.active * {
+  color: #646cff;
+}
+
+* {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
 h1 {
