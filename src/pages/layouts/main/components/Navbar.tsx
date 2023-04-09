@@ -24,7 +24,7 @@ export const AppNavbar = () => {
 	const location = useLocation()
 
 	return (
-		<Navbar width={{ base: 250 }} p='xs' bg={'violet'}>
+		<Navbar width={{ base: 250 }} p='xs' bg={'main-green'}>
 			{menuItems.map((item) => (
 				<Navbar.Section mt={10} key={item.path}>
 					<NavLink to={item.path}>

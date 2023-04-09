@@ -6,6 +6,7 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
+  --main-green-color: #015366;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -17,7 +18,7 @@
 html, body {
   min-width: 100%;
   min-height: 100vh;
-  background-color: rgba(236, 236, 242, 0.932);
+  background-color: #ECEBE9;
 }
 
 .mantine-NavLink-body {
@@ -31,11 +32,11 @@ a,a * {
   text-decoration: none;
 }
 .mantine-NavLink-body:hover {
-  color: #535bf2;
+  color: var(--main-green-color);
 }
 
 a.active * {
-  color: #646cff;
+  color: var(--main-green-color);
 }
 
 * {
@@ -59,7 +60,12 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #015366;
+}
+
+.mantine-1pq2shc:hover {
+  background-color: #015366;
+  opacity: 0.8;
 }
 button:focus,
 button:focus-visible {
