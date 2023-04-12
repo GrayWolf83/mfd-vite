@@ -8,7 +8,7 @@ const MainLayout = () => {
 			<Box
 				style={{
 					height: 'calc(100vh - 32px - 60px)',
-					overflow: 'auto',
+					overflowY: 'auto',
 				}}>
 				<Outlet />
 			</Box>
