@@ -1,0 +1,1 @@
+export { UserInfoWidget } from './UserInfoWidget'
