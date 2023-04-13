@@ -21,6 +21,7 @@ export const CategoriesListWidget = ({ category }: { category: string }) => {
 			hasNextPage={hasNextPage}
 			loading={loading}
 			onChangePage={setPage}
+			currentCategory={currentCategory}
 		/>
 	)
 }

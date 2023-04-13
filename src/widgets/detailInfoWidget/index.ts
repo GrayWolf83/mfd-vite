@@ -1,0 +1,1 @@
+export { DetailInfoWidget } from './DetailInfoWidget'

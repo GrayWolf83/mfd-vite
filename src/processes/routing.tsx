@@ -8,6 +8,7 @@ import { Loader } from '~shared/ui'
 const Home = lazy(() => import('~pages/home'))
 const Category = lazy(() => import('~pages/catogory'))
 const Login = lazy(() => import('~pages/login'))
+const Detail = lazy(() => import('~pages/detail'))
 
 const Routing = () => {
 	return (
@@ -22,6 +23,14 @@ const Routing = () => {
 							element={
 								<ProtectedAuth>
 									<Category />
+								</ProtectedAuth>
+							}
+						/>
+						<Route
+							path='detail/:category/:id'
+							element={
+								<ProtectedAuth>
+									<Detail />
 								</ProtectedAuth>
 							}
 						/>
