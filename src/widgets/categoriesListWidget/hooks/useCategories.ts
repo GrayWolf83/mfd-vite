@@ -6,7 +6,6 @@ export const useCategories = (category: string, page: number) => {
 	const [items, setItems] = useState<any[]>([])
 	const [hasNextPage, setHasNextPage] = useState(false)
 	const [loading, setLoading] = useState(true)
-	const [error, setError] = useState(false)
 
 	useEffect(() => {
 		setItems([])
@@ -15,7 +14,6 @@ export const useCategories = (category: string, page: number) => {
 	useEffect(() => {
 		if (category) {
 			setLoading(true)
-			setError(false)
 
 			axios({
 				method: 'GET',
@@ -31,7 +29,6 @@ export const useCategories = (category: string, page: number) => {
 					setHasNextPage(Boolean(data.info.next))
 				})
 				.catch((e) => {
-					setError(true)
 					console.error(e)
 				})
 				.finally(() => {
@@ -40,5 +37,5 @@ export const useCategories = (category: string, page: number) => {
 		}
 	}, [category, page])
 
-	return { categories: items, loading, error, hasNextPage }
+	return { categories: items, loading, hasNextPage }
 }
