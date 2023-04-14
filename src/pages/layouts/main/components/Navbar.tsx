@@ -24,7 +24,7 @@ export const AppNavbar = () => {
 	const location = useLocation()
 
 	return (
-		<Navbar width={{ base: 250 }} p='xs' bg={'main-green'}>
+		<Navbar width={{ base: 130, sm: 250 }} p='xs' bg={'main-green'}>
 			{menuItems.map((item) => {
 				const category = item.path.split('/')[2]
 
