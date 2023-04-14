@@ -4,7 +4,7 @@ import { Header, Navbar } from './components'
 
 const MainLayout = () => {
 	return (
-		<AppShell padding='md' navbar={<Navbar />} header={<Header />}>
+		<AppShell navbar={<Navbar />} header={<Header />}>
 			<Box
 				style={{
 					height: 'calc(100vh - 32px - 60px)',
